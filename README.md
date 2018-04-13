@@ -1,6 +1,10 @@
 # Site of Real Estate Agency
+* cross-browser compatibility
+* valid code
+* Overall performance score in YSlow **89**
 
-[TODO. There will be project description]
+
+[https://onlinealex.github.io/21_valid_markup/index.html](https://onlinealex.github.io/21_valid_markup/index.html)
 
 # Project Goals
 
