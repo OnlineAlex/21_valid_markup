@@ -1085,7 +1085,7 @@
         }
 
         /* Attributes
-	---------------------------------------------------------------------- */
+    ---------------------------------------------------------------------- */
 
         // Support: IE<8
         // Verify that getAttribute really returns attributes and not properties (excepting IE8 booleans)
@@ -1095,7 +1095,7 @@
         });
 
         /* getElement(s)By*
-	---------------------------------------------------------------------- */
+    ---------------------------------------------------------------------- */
 
         // Check if getElementsByTagName("*") returns only elements
         support.getElementsByTagName = assert(function (div) {
@@ -1188,7 +1188,7 @@
         };
 
         /* QSA/matchesSelector
-	---------------------------------------------------------------------- */
+    ---------------------------------------------------------------------- */
 
         // QSA and matchesSelector support
 
@@ -1282,7 +1282,7 @@
         rbuggyMatches = rbuggyMatches.length && new RegExp(rbuggyMatches.join("|"));
 
         /* Contains
-	---------------------------------------------------------------------- */
+    ---------------------------------------------------------------------- */
         hasCompare = rnative.test(docElem.compareDocumentPosition);
 
         // Element contains another
@@ -1310,7 +1310,7 @@
           };
 
         /* Sorting
-	---------------------------------------------------------------------- */
+    ---------------------------------------------------------------------- */
 
         // Document order sorting
         sortOrder = hasCompare ?
@@ -1583,15 +1583,15 @@
 
           "CHILD": function (match) {
             /* matches from matchExpr["CHILD"]
-				1 type (only|nth|...)
-				2 what (child|of-type)
-				3 argument (even|odd|\d*|\d*n([+-]\d+)?|...)
-				4 xn-component of xn+y argument ([+-]?\d*n|)
-				5 sign of xn-component
-				6 x of xn-component
-				7 sign of y-component
-				8 y of y-component
-			*/
+                1 type (only|nth|...)
+                2 what (child|of-type)
+                3 argument (even|odd|\d*|\d*n([+-]\d+)?|...)
+                4 xn-component of xn+y argument ([+-]?\d*n|)
+                5 sign of xn-component
+                6 x of xn-component
+                7 sign of y-component
+                8 y of y-component
+            */
             match[1] = match[1].toLowerCase();
 
             if (match[1].slice(0, 3) === "nth") {
@@ -3070,23 +3070,23 @@
   /*
  * Create a callback list using the following parameters:
  *
- *	options: an optional list of space-separated options that will change how
- *			the callback list behaves or a more traditional option object
+ *    options: an optional list of space-separated options that will change how
+ *            the callback list behaves or a more traditional option object
  *
  * By default a callback list will act like an event callback list and can be
  * "fired" multiple times.
  *
  * Possible options:
  *
- *	once:			will ensure the callback list can only be fired once (like a Deferred)
+ *    once:            will ensure the callback list can only be fired once (like a Deferred)
  *
- *	memory:			will keep track of previous values and will call any callback added
- *					after the list has been fired right away with the latest "memorized"
- *					values (like a Deferred)
+ *    memory:            will keep track of previous values and will call any callback added
+ *                    after the list has been fired right away with the latest "memorized"
+ *                    values (like a Deferred)
  *
- *	unique:			will ensure a callback can only be added once (no duplicate in the list)
+ *    unique:            will ensure a callback can only be added once (no duplicate in the list)
  *
- *	stopOnFalse:	interrupt callings when a callback returns false
+ *    stopOnFalse:    interrupt callings when a callback returns false
  *
  */
   jQuery.Callbacks = function (options) {
@@ -8552,21 +8552,21 @@
     rurl = /^([\w.+-]+:)(?:\/\/(?:[^\/?#]*@|)([^\/?#:]*)(?::(\d+)|)|)/,
 
     /* Prefilters
-	 * 1) They are useful to introduce custom dataTypes (see ajax/jsonp.js for an example)
-	 * 2) These are called:
-	 *    - BEFORE asking for a transport
-	 *    - AFTER param serialization (s.data is a string if s.processData is true)
-	 * 3) key is the dataType
-	 * 4) the catchall symbol "*" can be used
-	 * 5) execution will start with transport dataType and THEN continue down to "*" if needed
-	 */
+     * 1) They are useful to introduce custom dataTypes (see ajax/jsonp.js for an example)
+     * 2) These are called:
+     *    - BEFORE asking for a transport
+     *    - AFTER param serialization (s.data is a string if s.processData is true)
+     * 3) key is the dataType
+     * 4) the catchall symbol "*" can be used
+     * 5) execution will start with transport dataType and THEN continue down to "*" if needed
+     */
     prefilters = {},
 
     /* Transports bindings
-	 * 1) key is the dataType
-	 * 2) the catchall symbol "*" can be used
-	 * 3) selection will start with transport dataType and THEN go to "*" if needed
-	 */
+     * 1) key is the dataType
+     * 2) the catchall symbol "*" can be used
+     * 3) selection will start with transport dataType and THEN go to "*" if needed
+     */
     transports = {},
 
     // Avoid comment-prolog char sequence (#10098); must appease lint and evade compression
@@ -8831,16 +8831,16 @@
       async: true,
       contentType: "application/x-www-form-urlencoded; charset=UTF-8",
       /*
-		timeout: 0,
-		data: null,
-		dataType: null,
-		username: null,
-		password: null,
-		cache: null,
-		throws: false,
-		traditional: false,
-		headers: {},
-		*/
+        timeout: 0,
+        data: null,
+        dataType: null,
+        username: null,
+        password: null,
+        cache: null,
+        throws: false,
+        traditional: false,
+        headers: {},
+        */
 
       accepts: {
         "*": allTypes,
